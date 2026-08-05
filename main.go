@@ -34,9 +34,6 @@ var rootCmd = &cobra.Command{
 	Use:   "calender-cli",
 	Short: "A command-line client for Google Calendar",
 	Long:  "A feature-complete CLI for reading and managing Google Calendar events and calendars.",
-	RunE: func(cmd *cobra.Command, args []string) error {
-		return runUpcoming()
-	},
 }
 
 func init() {
